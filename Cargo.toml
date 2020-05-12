@@ -1,0 +1,18 @@
+[package]
+name = "channels_lite"
+version = "0.1.0"
+authors = ["Yolier Galán Tassé <gallegogt@gmail.com>", "Alessandro Buser <4l3bu53r@gmail.com>"]
+edition = "2018"
+
+[lib]
+name = "channels_lite"
+path = "src/lib.rs"
+
+[dependencies]
+iota-streams = { git = "https://github.com/iotaledger/streams.git" }
+failure = "0.1.7"
+iota-core = { git = "https://github.com/iotaledger/iota.rs.git" }
+iota-conversion = { git = "https://github.com/iotaledger/iota.rs.git" }
+tokio = { version = "^0.2", features = ["full"] }
+async-trait = "0.1.30"
+chrono = "0.4"
